@@ -62,7 +62,7 @@ export default function TechStack() {
                 <div className="z-1">
                   <Circle
                     ref={div10Ref}
-                    className="dark:bg-neutral-800 border-2 border-neutral-600"
+                    className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon
                       icon="simple-icons:express"
@@ -80,7 +80,7 @@ export default function TechStack() {
                 <div className="z-1">
                   <Circle
                     ref={div9Ref}
-                    className="dark:bg-neutral-800 border-2 border-neutral-600"
+                    className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon
                       icon="hugeicons:shadcn-square"
@@ -100,7 +100,7 @@ export default function TechStack() {
                 <div className="z-1">
                   <Circle
                     ref={div1Ref}
-                    className="dark:bg-neutral-800 border-2 border-neutral-600"
+                    className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon
                       icon="mdi:nodejs"
@@ -118,7 +118,7 @@ export default function TechStack() {
                 <div className="z-1">
                   <Circle
                     ref={div5Ref}
-                    className="dark:bg-neutral-800 border-2 border-neutral-600"
+                    className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon icon="uil:react" className="text-blue-500 text-4xl" />
                   </Circle>
@@ -135,7 +135,7 @@ export default function TechStack() {
                 <div className="z-1">
                   <Circle
                     ref={div2Ref}
-                    className="dark:bg-neutral-800 border-2 border-neutral-600"
+                    className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon
                       icon="lineicons:mongodb"
@@ -153,11 +153,11 @@ export default function TechStack() {
                 <div className="z-1">
                   <Circle
                     ref={div4Ref}
-                    className="size-16 dark:bg-neutral-800 border-2 border-neutral-600 "
+                    className="size-16 dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100 "
                   >
                     <Icon
                       icon="line-md:github"
-                      className="text-neutral-100 text-4xl"
+                      className="dark:text-neutral-100 text-4xl"
                     />
                   </Circle>
                 </div>
@@ -172,11 +172,11 @@ export default function TechStack() {
                 <div className="z-1">
                   <Circle
                     ref={div6Ref}
-                    className="dark:bg-neutral-800 border-2 border-neutral-600"
+                    className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon
                       icon="teenyicons:nextjs-outline"
-                      className="text-white text-3xl"
+                      className="dark:text-white text-3xl"
                     />
                   </Circle>
                 </div>
@@ -192,7 +192,7 @@ export default function TechStack() {
                 <div className="z-1">
                   <Circle
                     ref={div3Ref}
-                    className="dark:bg-neutral-800 border-2 border-neutral-600"
+                    className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon
                       icon="simple-icons:postgresql"
@@ -210,7 +210,7 @@ export default function TechStack() {
                 <div className="z-1">
                   <Circle
                     ref={div7Ref}
-                    className="dark:bg-neutral-800 border-2 border-neutral-600"
+                    className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon
                       icon="proicons:typescript"
@@ -230,7 +230,7 @@ export default function TechStack() {
                 <div className="z-1">
                   <Circle
                     ref={div8Ref}
-                    className="dark:bg-neutral-800 border-2 border-neutral-600"
+                    className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon
                       icon="devicon:tailwindcss"

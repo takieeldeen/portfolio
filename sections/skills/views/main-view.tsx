@@ -4,7 +4,7 @@ import TechStack from "../tech-stack";
 function SkillsSection() {
   return (
     <section id="skills" className="py-26">
-      <h2 className="z-10 text-center text-3xl font-medium tracking-tighter whitespace-pre-wrap text-white">
+      <h2 className="z-10 text-center text-3xl font-medium tracking-tighter whitespace-pre-wrap dark:text-white">
         Tools & Technologies
       </h2>
       <div>
