@@ -9,6 +9,7 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
+import { TooltipProvider } from "@/components/animate-ui/components/animate/tooltip";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,24 +37,26 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <header className="w-full border-b">
-            <NavigationMenu className="mx-auto h-12 max-w-7xl px-6">
-              <NavigationMenuList className="flex w-full items-center justify-center">
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="#skills"
-                      className="font-semibold dark:text-gray-300"
-                    >
-                      Skills
-                    </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
-          </header>
+          <TooltipProvider>
+            <header className="w-full border-b">
+              <NavigationMenu className="mx-auto h-12 max-w-7xl px-6">
+                <NavigationMenuList className="flex w-full items-center justify-center">
+                  <NavigationMenuItem>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="#skills"
+                        className="font-semibold dark:text-gray-300"
+                      >
+                        Skills
+                      </Link>
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </header>
 
-          {children}
+            {children}
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>

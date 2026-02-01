@@ -1,9 +1,15 @@
 import React from "react";
+import TechStack from "../tech-stack";
 
 function SkillsSection() {
   return (
-    <section id="skills">
-      <h1>Frontend Web Developer</h1>
+    <section id="skills" className="py-26">
+      <h2 className="z-10 text-center text-3xl font-medium tracking-tighter whitespace-pre-wrap text-white">
+        Tools & Technologies
+      </h2>
+      <div>
+        <TechStack />
+      </div>
     </section>
   );
 }
