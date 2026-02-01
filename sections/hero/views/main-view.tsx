@@ -22,7 +22,7 @@ function HeroSection() {
             <PhoneCall />
             Contact Me
           </Button>
-          <Button className="rounded-full h-12 px-8! bg-neutral-950 border hover:bg-neutral-900 border-neutral-600 text-neutral-400">
+          <Button className="rounded-full h-12 px-8! dark:bg-neutral-950 text-white border hover:bg-neutral-900 border-neutral-600 dark:text-neutral-400">
             <Download />
             Download CV
           </Button>
