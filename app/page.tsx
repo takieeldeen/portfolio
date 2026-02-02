@@ -4,7 +4,7 @@ import TechStackSection from "@/sections/tech-stack/views/main-view";
 
 export default function Home() {
   return (
-    <main className=" px-6">
+    <main className="">
       <HeroSection />
       <TechStackSection />
       <SkillsSection />

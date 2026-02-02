@@ -3,7 +3,7 @@ import TechStack from "../tech-stack";
 
 function TechStackSection() {
   return (
-    <section id="skills" className="py-10">
+    <section id="skills" className="py-10 bg-neutral-100 dark:bg-neutral-950">
       <h2 className="z-10 text-center text-3xl font-medium tracking-tighter whitespace-pre-wrap dark:text-white">
         Tools & Technologies
       </h2>
