@@ -11,8 +11,10 @@ import { Lock, ShieldCheck, Key } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 function SecurityCard() {
+  const t = useTranslations("SKILLS");
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -27,10 +29,8 @@ function SecurityCard() {
         )}
       />
       <CardHeader>
-        <CardTitle>Security & Encryption</CardTitle>
-        <CardDescription>
-          Implementing JWT, OAuth2, and industry-standard security protocols.
-        </CardDescription>
+        <CardTitle>{t("SECURITY_TITLE")}</CardTitle>
+        <CardDescription>{t("SECURITY_DESC")}</CardDescription>
       </CardHeader>
       <CardContent className="flex items-center justify-center pb-12 pt-6">
         <div className="relative">

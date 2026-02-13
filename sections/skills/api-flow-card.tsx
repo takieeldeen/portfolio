@@ -11,6 +11,7 @@ import { Icon } from "@iconify-icon/react";
 import { AnimatedBeam } from "@/components/ui/animated-beam";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 const Circle = forwardRef<
   HTMLDivElement,
@@ -32,6 +33,7 @@ const Circle = forwardRef<
 Circle.displayName = "Circle";
 
 function APIFlowCard() {
+  const t = useTranslations("SKILLS");
   const containerRef = useRef<HTMLDivElement>(null);
   const userRef = useRef<HTMLDivElement>(null);
   const serverRef = useRef<HTMLDivElement>(null);
@@ -45,10 +47,8 @@ function APIFlowCard() {
         )}
       />
       <CardHeader>
-        <CardTitle>API & Data Architecture</CardTitle>
-        <CardDescription>
-          Designing robust data flows between clients, servers, and databases.
-        </CardDescription>
+        <CardTitle>{t("API_TITLE")}</CardTitle>
+        <CardDescription>{t("API_DESC")}</CardDescription>
       </CardHeader>
       <CardContent className="flex items-center justify-center py-10 min-h-[200px]">
         <div

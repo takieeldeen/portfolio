@@ -7,24 +7,28 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 
-import Link from "next/link";
 import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 import { Languages } from "lucide-react";
-import { useState } from "react";
+import { useTranslations, useLocale } from "next-intl";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 
 export default function Navbar() {
-  const [lang, setLang] = useState("EN");
+  const t = useTranslations("NAV");
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
 
   const toggleLang = () => {
-    setLang((prev) => (prev === "EN" ? "AR" : "EN"));
+    const nextLocale = locale === "en" ? "ar" : "en";
+    router.replace(pathname, { locale: nextLocale });
   };
   const navItems = [
-    { name: "Projects", href: "#projects" },
-    { name: "Stack", href: "#stack" },
-    { name: "Skills", href: "#skills" },
-    { name: "Process", href: "#process" },
-    { name: "Stats", href: "#stats" },
-    { name: "Contact", href: "#contact" },
+    { name: t("PROJECTS"), href: "#projects" },
+    { name: t("STACK"), href: "#stack" },
+    { name: t("SKILLS"), href: "#skills" },
+    { name: t("PROCESS"), href: "#process" },
+    { name: t("STATS"), href: "#stats" },
+    { name: t("CONTACT"), href: "#contact" },
   ];
 
   return (
@@ -35,8 +39,8 @@ export default function Navbar() {
           className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors text-xs font-bold tracking-wider"
         >
           <Languages size={14} className="text-neutral-500" />
-          <span className="text-neutral-700 dark:text-neutral-300 w-4">
-            {lang}
+          <span className="text-neutral-700 dark:text-neutral-300 w-4 uppercase">
+            {locale}
           </span>
         </button>
       </div>

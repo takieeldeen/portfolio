@@ -26,10 +26,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Lock, User } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const allStates = ["LOADING", "LOADED", "UNAUTHORIZED", "EMPTY"];
 
 function StateManagementCard() {
+  const t = useTranslations("SKILLS");
   const [state, setState] = useState<
     "LOADING" | "LOADED" | "EMPTY" | "UNAUTHORIZED"
   >("UNAUTHORIZED");
@@ -55,10 +57,8 @@ function StateManagementCard() {
         )}
       /> */}
       <CardHeader>
-        <CardTitle>State Management</CardTitle>
-        <CardDescription>
-          Every State needs to be designed carefully
-        </CardDescription>
+        <CardTitle>{t("STATE_TITLE")}</CardTitle>
+        <CardDescription>{t("STATE_DESC")}</CardDescription>
       </CardHeader>
       <CardContent className=" py-12 h-full justify-center flex flex-col gap-3">
         {state === "LOADED" && (
@@ -116,16 +116,15 @@ function StateManagementCard() {
 }
 
 function DataItem() {
+  const t = useTranslations("SKILLS");
   return (
     <Item
       variant="default"
       className="bg-neutral-900 py-3 dark:border-neutral-800 z-2 w-full"
     >
       <ItemContent className="gap-0">
-        <ItemTitle>Ahmed Ali</ItemTitle>
-        <ItemDescription>
-          Responsible for all imports and exports.
-        </ItemDescription>
+        <ItemTitle>{t("STATE_ITEM_TITLE")}</ItemTitle>
+        <ItemDescription>{t("STATE_ITEM_DESC")}</ItemDescription>
       </ItemContent>
     </Item>
   );
@@ -145,20 +144,19 @@ function DataItemSkeleton() {
 }
 
 function EmptyData() {
+  const t = useTranslations("SKILLS");
   return (
     <Empty className="border border-dashed">
       <EmptyHeader>
         <EmptyMedia variant="icon">
           <User />
         </EmptyMedia>
-        <EmptyTitle>Employee Data Empty</EmptyTitle>
-        <EmptyDescription>
-          Start by inserting the data for your first employee in the system.
-        </EmptyDescription>
+        <EmptyTitle>{t("STATE_EMPTY_TITLE")}</EmptyTitle>
+        <EmptyDescription>{t("STATE_EMPTY_DESC")}</EmptyDescription>
       </EmptyHeader>
       <EmptyContent>
         <Button variant="outline" size="sm">
-          New Employee
+          {t("STATE_EMPTY_BUTTON")}
         </Button>
       </EmptyContent>
     </Empty>
@@ -166,18 +164,15 @@ function EmptyData() {
 }
 
 function UnauthorizedDataCard() {
+  const t = useTranslations("SKILLS");
   return (
     <Empty className="border border-dashed">
       <EmptyHeader>
         <EmptyMedia variant="icon" className="h-16 w-16">
           <Lock size={48} />
         </EmptyMedia>
-        <EmptyTitle className="leading-5">
-          You are not authorized to access this page
-        </EmptyTitle>
-        <EmptyDescription>
-          Please contact the it department to get access for this resource.
-        </EmptyDescription>
+        <EmptyTitle className="leading-5">{t("STATE_UNAUTH_TITLE")}</EmptyTitle>
+        <EmptyDescription>{t("STATE_UNAUTH_DESC")}</EmptyDescription>
       </EmptyHeader>
     </Empty>
   );

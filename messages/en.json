@@ -1,0 +1,90 @@
+{
+  "TITLE": "Hi, I am Takie",
+  "NAV": {
+    "PROJECTS": "Projects",
+    "STACK": "Stack",
+    "SKILLS": "Skills",
+    "PROCESS": "Process",
+    "STATS": "Stats",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "TITLE": "Frontend Web Developer",
+    "SUBTITLE": "Building scalable, production-ready systems with React, Next.js, and TypeScript.",
+    "CONTACT_ME": "Contact Me",
+    "DOWNLOAD_CV": "Download CV"
+  },
+  "STATS": {
+    "EXPERIENCE": "Professional Experience",
+    "EXP_SUFFIX": "+ Years",
+    "PROJECTS": "Projects Completed",
+    "PROJ_SUFFIX": "+ Delivered",
+    "PERFORM": "Performance Optimization Achieved",
+    "PERFORM_SUFFIX": "%+",
+    "DELIVERY": "On-Time Delivery Rate",
+    "DELIVERY_SUFFIX": "%"
+  },
+  "TECH": {
+    "TITLE": "Tools & Technologies"
+  },
+  "WORKFLOW": {
+    "TITLE": "How I Work",
+    "SUBTITLE": "From the first idea to the final product, I follow a refined process designed to deliver high-quality results predictably and efficiently.",
+    "STEP1_TITLE": "1. Discovery",
+    "STEP1_DESC": "Deep dive into your goals, target audience, and project requirements to set a solid foundation.",
+    "STEP2_TITLE": "2. Design",
+    "STEP2_DESC": "Designing intuitive UI/UX and architecting the system structure for scalability and performance.",
+    "STEP3_TITLE": "3. Build",
+    "STEP3_DESC": "Turning designs into reality with clean, performant code and modern engineering practices.",
+    "STEP4_TITLE": "4. Launch",
+    "STEP4_DESC": "Rigorous testing followed by a smooth deployment and post-launch monitoring for success.",
+    "CTA_TITLE": "Ready to start your project?",
+    "CTA_SUBTITLE": "Let's turn your vision into a professional digital solution.",
+    "CTA_BUTTON": "Book a Discovery Call"
+  },
+  "SKILLS": {
+    "PERF_TITLE": "Performance Optimization",
+    "PERF_DESC": "Optimizing UI Performance for better User Experience",
+    "API_TITLE": "API & Data Architecture",
+    "API_DESC": "Designing robust data flows between clients, servers, and databases.",
+    "STATE_TITLE": "State Management",
+    "STATE_DESC": "Every State needs to be designed carefully",
+    "STATE_ITEM_TITLE": "Ahmed Ali",
+    "STATE_ITEM_DESC": "Responsible for all imports and exports.",
+    "STATE_EMPTY_TITLE": "Employee Data Empty",
+    "STATE_EMPTY_DESC": "Start by inserting the data for your first employee in the system.",
+    "STATE_EMPTY_BUTTON": "New Employee",
+    "STATE_UNAUTH_TITLE": "You are not authorized to access this page",
+    "STATE_UNAUTH_DESC": "Please contact the it department to get access for this resource.",
+    "MOBILE_TITLE": "Mobile-First Design",
+    "MOBILE_DESC": "Designing for the smallest screen first to ensure a seamless experience.",
+    "SECURITY_TITLE": "Security & Encryption",
+    "SECURITY_DESC": "Implementing JWT, OAuth2, and industry-standard security protocols.",
+    "SECURITY_JWT": "JWT VALID"
+  },
+  "PROJECTS": {
+    "TITLE": "Featured Projects",
+    "SUBTITLE": "A collection of selected works where I combined design thinking with engineering to solve real-world problems.",
+    "LIVE_DEMO": "Live Demo",
+    "GITHUB": "Github",
+    "AGZ_B2B_TITLE": "Agzakhana: Enterprise Dashboard (B2B)",
+    "AGZ_B2B_DESC": "A sophisticated management system for pharmacy chains. Includes branch-wide inventory tracking, granular RBAC permissions, and real-time fulfillment monitoring. Built with a robust backend to handle complex enterprise logic.",
+    "AGZ_B2C_TITLE": "Agzakhana: Public Portal (B2C)",
+    "AGZ_B2C_DESC": "A localized e-commerce experience for medicine ordering. Features real-time branch finding via Leaflet maps, multi-step ordering, and secure Stripe integration. Fully responsive and SEO-optimized.",
+    "ESTATEIN_TITLE": "Estatein (Real Estate Platform)",
+    "ESTATEIN_DESC": "A premium real estate website featuring dynamic property listings and optimized routing. Developed with the Next.js App Router for superior performance and SEO. Integrated Puppeteer and Supabase.",
+    "INVOO_TITLE": "Invoo (Invoice Management)",
+    "INVOO_DESC": "A comprehensive invoice management solution featuring CRUD operations, admin monitoring, and user role management. Supports bilingual interfaces (EN/AR), Dark/Light modes, and detailed activity logs."
+  },
+  "CONTACT": {
+    "TITLE_PART1": "Let's build something",
+    "TITLE_HIGHLIGHT": "exceptional",
+    "TITLE_PART2": "together.",
+    "SUBTITLE": "Whether you have a specific project in mind or just want to explore possibilities, I'm always open to discussing new opportunities.",
+    "COPY_EMAIL": "Copy My Email",
+    "EMAIL_COPIED": "Email Copied!",
+    "LINKEDIN": "LinkedIn",
+    "GITHUB": "GitHub",
+    "FOOTER": "Based in Egypt • Available for interesting collaborations"
+  }
+}

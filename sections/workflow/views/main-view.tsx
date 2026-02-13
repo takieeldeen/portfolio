@@ -3,52 +3,50 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Search, Layout, Code2, Rocket, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const workflowSteps = [
-  {
-    title: "1. Discovery",
-    description:
-      "Deep dive into your goals, target audience, and project requirements to set a solid foundation.",
-    icon: <Search className="w-6 h-6" />,
-    color: "bg-blue-500",
-    shadow: "shadow-blue-500/20",
-  },
-  {
-    title: "2. Design",
-    description:
-      "Designing intuitive UI/UX and architecting the system structure for scalability and performance.",
-    icon: <Layout className="w-6 h-6" />,
-    color: "bg-purple-500",
-    shadow: "shadow-purple-500/20",
-  },
-  {
-    title: "3. Build",
-    description:
-      "Turning designs into reality with clean, performant code and modern engineering practices.",
-    icon: <Code2 className="w-6 h-6" />,
-    color: "bg-green-500",
-    shadow: "shadow-green-500/20",
-  },
-  {
-    title: "4. Launch",
-    description:
-      "Rigorous testing followed by a smooth deployment and post-launch monitoring for success.",
-    icon: <Rocket className="w-6 h-6" />,
-    color: "bg-orange-500",
-    shadow: "shadow-orange-500/20",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function WorkflowSection() {
+  const t = useTranslations("WORKFLOW");
+
+  const workflowSteps = [
+    {
+      title: t("STEP1_TITLE"),
+      description: t("STEP1_DESC"),
+      icon: <Search className="w-6 h-6" />,
+      color: "bg-blue-500",
+      shadow: "shadow-blue-500/20",
+    },
+    {
+      title: t("STEP2_TITLE"),
+      description: t("STEP2_DESC"),
+      icon: <Layout className="w-6 h-6" />,
+      color: "bg-purple-500",
+      shadow: "shadow-purple-500/20",
+    },
+    {
+      title: t("STEP3_TITLE"),
+      description: t("STEP3_DESC"),
+      icon: <Code2 className="w-6 h-6" />,
+      color: "bg-green-500",
+      shadow: "shadow-green-500/20",
+    },
+    {
+      title: t("STEP4_TITLE"),
+      description: t("STEP4_DESC"),
+      icon: <Rocket className="w-6 h-6" />,
+      color: "bg-orange-500",
+      shadow: "shadow-orange-500/20",
+    },
+  ];
+
   return (
     <section id="process" className="py-24 px-6 max-w-7xl mx-auto">
       <div className="flex flex-col gap-4 mb-16 text-center">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight dark:text-white">
-          How I Work
+          {t("TITLE")}
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-          From the first idea to the final product, I follow a refined process
-          designed to deliver high-quality results predictably and efficiently.
+          {t("SUBTITLE")}
         </p>
       </div>
 
@@ -97,14 +95,14 @@ export default function WorkflowSection() {
       >
         <div className="flex flex-col gap-1">
           <h4 className="text-lg font-bold dark:text-white">
-            Ready to start your project?
+            {t("CTA_TITLE")}
           </h4>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            Let&apos;s turn your vision into a professional digital solution.
+            {t("CTA_SUBTITLE")}
           </p>
         </div>
         <button className="px-6 py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 rounded-full font-bold text-sm flex items-center gap-2 hover:opacity-90 transition-opacity">
-          Book a Discovery Call
+          {t("CTA_BUTTON")}
           <ExternalLink size={16} />
         </button>
       </motion.div>

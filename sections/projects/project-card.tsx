@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface ProjectCardProps {
   title: string;
@@ -24,6 +25,8 @@ export default function ProjectCard({
   imageColor,
   imageUri,
 }: ProjectCardProps) {
+  const t = useTranslations("PROJECTS");
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -75,7 +78,7 @@ export default function ProjectCard({
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-sm font-bold text-neutral-900 dark:text-white hover:underline decoration-blue-500 underline-offset-4"
             >
-              Live Demo
+              {t("LIVE_DEMO")}
               <ExternalLink size={14} />
             </a>
           )}
@@ -86,7 +89,7 @@ export default function ProjectCard({
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-sm font-bold text-neutral-500 hover:text-neutral-900 dark:hover:text-white transition-colors"
             >
-              Github
+              {t("GITHUB")}
               <Github size={14} />
             </a>
           )}

@@ -11,8 +11,10 @@ import {
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 function PerformanceCard() {
+  const t = useTranslations("SKILLS");
   const [value, setValue] = useState(70);
 
   useEffect(() => {
@@ -30,14 +32,12 @@ function PerformanceCard() {
     <Card className="relative">
       <DotPattern
         className={cn(
-          "mask-[radial-gradient(300px_circle_at_center,white,transparent)] dark:mask-[radial-gradient(300px_circle_at_center,rgba(255,255,255,0.3),transparent)]"
+          "mask-[radial-gradient(300px_circle_at_center,white,transparent)] dark:mask-[radial-gradient(300px_circle_at_center,rgba(255,255,255,0.3),transparent)]",
         )}
       />
       <CardHeader>
-        <CardTitle>Performance Optimization</CardTitle>
-        <CardDescription>
-          Optimizing UI Performance for better User Experience
-        </CardDescription>
+        <CardTitle>{t("PERF_TITLE")}</CardTitle>
+        <CardDescription>{t("PERF_DESC")}</CardDescription>
         <CardContent className="flex items-center justify-center py-12">
           <AnimatedCircularProgressBar
             value={value}

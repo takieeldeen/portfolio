@@ -12,8 +12,10 @@ import { Smartphone } from "lucide-react";
 import { motion } from "framer-motion";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 function MobileDesignCard() {
+  const t = useTranslations("SKILLS");
   return (
     <Card className="relative overflow-hidden h-full row-span-1">
       <DotPattern
@@ -22,11 +24,8 @@ function MobileDesignCard() {
         )}
       />
       <CardHeader>
-        <CardTitle>Mobile-First Design</CardTitle>
-        <CardDescription>
-          Designing for the smallest screen first to ensure a seamless
-          experience.
-        </CardDescription>
+        <CardTitle>{t("MOBILE_TITLE")}</CardTitle>
+        <CardDescription>{t("MOBILE_DESC")}</CardDescription>
       </CardHeader>
       <CardContent className="flex items-center justify-center pb-10">
         <motion.div

@@ -3,41 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { motion, useInView, useSpring, useTransform } from "framer-motion";
 import { Briefcase, Code, Zap, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const stats = [
-  {
-    label: "Professional Experience",
-    value: 2,
-    suffix: "+ Years",
-    icon: <Briefcase className="w-6 h-6" />,
-    color: "text-blue-500",
-    bgColor: "bg-blue-500/10",
-  },
-  {
-    label: "Projects Completed",
-    value: 20,
-    suffix: "+ Delivered",
-    icon: <Code className="w-6 h-6" />,
-    color: "text-purple-500",
-    bgColor: "bg-purple-500/10",
-  },
-  {
-    label: "Performance Optimization Achieved",
-    value: 30,
-    suffix: "%+",
-    icon: <Zap className="w-6 h-6" />,
-    color: "text-orange-500",
-    bgColor: "bg-orange-500/10",
-  },
-  {
-    label: "On-Time Delivery Rate",
-    value: 100,
-    suffix: "%",
-    icon: <Sparkles className="w-6 h-6" />,
-    color: "text-green-500",
-    bgColor: "bg-green-500/10",
-  },
-];
+import { useTranslations } from "next-intl";
 
 function AnimatedNumber({ value }: { value: number }) {
   const ref = useRef(null);
@@ -59,6 +25,43 @@ function AnimatedNumber({ value }: { value: number }) {
 }
 
 export default function ImpactStatsSection() {
+  const t = useTranslations("STATS");
+
+  const stats = [
+    {
+      label: t("EXPERIENCE"),
+      value: 2,
+      suffix: t("EXP_SUFFIX"),
+      icon: <Briefcase className="w-6 h-6" />,
+      color: "text-blue-500",
+      bgColor: "bg-blue-500/10",
+    },
+    {
+      label: t("PROJECTS"),
+      value: 20,
+      suffix: t("PROJ_SUFFIX"),
+      icon: <Code className="w-6 h-6" />,
+      color: "text-purple-500",
+      bgColor: "bg-purple-500/10",
+    },
+    {
+      label: t("PERFORM"),
+      value: 30,
+      suffix: t("PERFORM_SUFFIX"),
+      icon: <Zap className="w-6 h-6" />,
+      color: "text-orange-500",
+      bgColor: "bg-orange-500/10",
+    },
+    {
+      label: t("DELIVERY"),
+      value: 100,
+      suffix: t("DELIVERY_SUFFIX"),
+      icon: <Sparkles className="w-6 h-6" />,
+      color: "text-green-500",
+      bgColor: "bg-green-500/10",
+    },
+  ];
+
   return (
     <section
       id="stats"

@@ -1,3 +1,4 @@
+"use client";
 import PerformanceCard from "../performance-card";
 import StateManagementCard from "../state-management-card";
 import MobileDesignCard from "../mobile-design-card";

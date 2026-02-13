@@ -4,8 +4,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Github, Linkedin, Mail, Check, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useTranslations } from "next-intl";
 
 export default function ContactSection() {
+  const t = useTranslations("CONTACT");
   const [copied, setCopied] = useState(false);
   const email = "your.email@example.com"; // User should replace this
 
@@ -33,13 +35,12 @@ export default function ContactSection() {
             className="flex flex-col gap-4"
           >
             <h2 className="text-4xl font-bold tracking-tight text-white md:text-6xl">
-              Let&apos;s build something{" "}
-              <span className="text-blue-500">exceptional</span> together.
+              {t("TITLE_PART1")}{" "}
+              <span className="text-blue-500">{t("TITLE_HIGHLIGHT")}</span>{" "}
+              {t("TITLE_PART2")}
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-neutral-400">
-              Whether you have a specific project in mind or just want to
-              explore possibilities, I&apos;m always open to discussing new
-              opportunities.
+              {t("SUBTITLE")}
             </p>
           </motion.div>
 
@@ -61,7 +62,7 @@ export default function ContactSection() {
                   >
                     <Check size={18} className="text-green-600" />
                     <span className="font-bold uppercase tracking-wider">
-                      Email Copied!
+                      {t("EMAIL_COPIED")}
                     </span>
                   </motion.div>
                 ) : (
@@ -74,7 +75,7 @@ export default function ContactSection() {
                   >
                     <Mail size={18} />
                     <span className="font-bold uppercase tracking-wider">
-                      Copy My Email
+                      {t("COPY_EMAIL")}
                     </span>
                   </motion.div>
                 )}
@@ -96,7 +97,7 @@ export default function ContactSection() {
               >
                 <Linkedin size={18} />
                 <span className="font-bold uppercase tracking-wider">
-                  LinkedIn
+                  {t("LINKEDIN")}
                 </span>
                 <ExternalLink size={14} className="opacity-40" />
               </a>
@@ -117,7 +118,7 @@ export default function ContactSection() {
               >
                 <Github size={18} />
                 <span className="font-bold uppercase tracking-wider">
-                  GitHub
+                  {t("GITHUB")}
                 </span>
                 <ExternalLink size={14} className="opacity-40" />
               </a>
@@ -125,9 +126,7 @@ export default function ContactSection() {
           </div>
 
           {/* Footer Subtext */}
-          <p className="text-sm text-neutral-500">
-            Based in Egypt • Available for interesting collaborations
-          </p>
+          <p className="text-sm text-neutral-500">{t("FOOTER")}</p>
         </div>
       </Card>
     </section>
