@@ -2,7 +2,7 @@
 
 A high-performance, visually stunning, and fully responsive developer portfolio built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**. Designed to showcase technical expertise with premium aesthetics and seamless bilingual support.
 
-![Portfolio Preview](public/preview.png) _(Note: Add your own preview image here)_
+
 
 ## 🚀 Key Features
 
