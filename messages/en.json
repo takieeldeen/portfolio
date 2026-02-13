@@ -9,8 +9,10 @@
     "CONTACT": "Contact"
   },
   "HERO": {
-    "TITLE": "Frontend Web Developer",
-    "SUBTITLE": "Building scalable, production-ready systems with React, Next.js, and TypeScript.",
+    "TITLE_PART1": "Crafting ",
+    "TITLE_HIGHLIGHT": "High-Performance",
+    "TITLE_PART2": " Web Experiences",
+    "SUBTITLE": "I am Takie Eldeen, a Frontend Engineer specializing in building scalable, production-ready systems with React, Next.js, and TypeScript.",
     "CONTACT_ME": "Contact Me",
     "DOWNLOAD_CV": "Download CV"
   },
@@ -25,7 +27,9 @@
     "DELIVERY_SUFFIX": "%"
   },
   "TECH": {
-    "TITLE": "Tools & Technologies"
+    "TITLE": "Tools & Technologies",
+    "SUBTITLE_H3": "Building a website takes more than just some tools.",
+    "SUBTITLE_P": "It’s about understanding how the pieces fit together, making decisions that actually improve the user experience, and knowing when to write code or when to rely on the right library. Tools help, but the real work is in how you use them."
   },
   "WORKFLOW": {
     "TITLE": "How I Work",
@@ -40,7 +44,7 @@
     "STEP4_DESC": "Rigorous testing followed by a smooth deployment and post-launch monitoring for success.",
     "CTA_TITLE": "Ready to start your project?",
     "CTA_SUBTITLE": "Let's turn your vision into a professional digital solution.",
-    "CTA_BUTTON": "Book a Discovery Call"
+    "CTA_BUTTON": "Contact Me"
   },
   "SKILLS": {
     "PERF_TITLE": "Performance Optimization",
@@ -56,8 +60,8 @@
     "STATE_EMPTY_BUTTON": "New Employee",
     "STATE_UNAUTH_TITLE": "You are not authorized to access this page",
     "STATE_UNAUTH_DESC": "Please contact the it department to get access for this resource.",
-    "MOBILE_TITLE": "Mobile-First Design",
-    "MOBILE_DESC": "Designing for the smallest screen first to ensure a seamless experience.",
+    "MOBILE_TITLE": "Responsive for All Devices",
+    "MOBILE_DESC": "Fluid layouts that adapt perfectly to mobile, tablet, and desktop screens.",
     "SECURITY_TITLE": "Security & Encryption",
     "SECURITY_DESC": "Implementing JWT, OAuth2, and industry-standard security protocols.",
     "SECURITY_JWT": "JWT VALID"

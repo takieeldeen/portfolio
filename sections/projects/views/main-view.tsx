@@ -14,7 +14,7 @@ export default function ProjectsSection() {
       imageColor: "bg-linear-to-br from-emerald-500 to-teal-600",
       imageUri:
         "https://media.licdn.com/dms/image/v2/D4D22AQF9M-H87aeb0g/feedshare-shrink_2048_1536/B4DZsS5hlpJIA0-/0/1765548634514?e=1772668800&v=beta&t=vqNj6f99E4YU9nH_bKSuaE614lCALBaefVYDqgUGurw",
-      link: "https://agzakhana-public.vercel.app/ar",
+      link: "https://agzakhana-backoffice-igil.vercel.app/en",
       github: null,
     },
     {

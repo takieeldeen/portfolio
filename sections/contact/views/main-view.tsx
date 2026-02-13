@@ -5,6 +5,7 @@ import { Github, Linkedin, Mail, Check, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function ContactSection() {
   const t = useTranslations("CONTACT");
@@ -73,10 +74,15 @@ export default function ContactSection() {
                     exit={{ scale: 0.5, opacity: 0 }}
                     className="flex items-center gap-2"
                   >
-                    <Mail size={18} />
-                    <span className="font-bold uppercase tracking-wider">
-                      {t("COPY_EMAIL")}
-                    </span>
+                    <Link
+                      href="mailto:takie.eldeen1998@gmail.com"
+                      className="flex items-center gap-2"
+                    >
+                      <Mail size={18} />
+                      <span className="font-bold uppercase tracking-wider">
+                        {t("COPY_EMAIL")}
+                      </span>
+                    </Link>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -90,7 +96,7 @@ export default function ContactSection() {
               asChild
             >
               <a
-                href="#"
+                href="https://www.linkedin.com/in/takie-eldeen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -111,7 +117,7 @@ export default function ContactSection() {
               asChild
             >
               <a
-                href="#"
+                href="https://github.com/takieeldeen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

@@ -12,6 +12,8 @@ import {
 } from "@/components/animate-ui/components/animate/tooltip";
 import { DotPattern } from "@/components/ui/dot-pattern";
 
+import { useTranslations } from "next-intl";
+
 const Circle = forwardRef<
   HTMLDivElement,
   { className?: string; children?: React.ReactNode }
@@ -32,6 +34,7 @@ const Circle = forwardRef<
 Circle.displayName = "Circle";
 
 export default function TechStack() {
+  const t = useTranslations("TECH");
   const containerRef = useRef<HTMLDivElement>(null);
   const div1Ref = useRef<HTMLDivElement>(null);
   const div2Ref = useRef<HTMLDivElement>(null);
@@ -45,17 +48,17 @@ export default function TechStack() {
   const div10Ref = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="flex md:flex-row items-center">
+    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-0">
       <div
-        className="relative flex h-[500px] pb-36 w-full items-center justify-center overflow-hidden flex-1"
+        className="relative flex h-[600px] md:h-[500px] pb-24 md:pb-36 w-full items-center justify-center overflow-hidden flex-1"
         ref={containerRef}
       >
         <DotPattern
           className={cn(
-            "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
+            "mask-[radial-gradient(300px_circle_at_center,white,transparent)]",
           )}
         />
-        <div className="flex size-full max-h-[200px] max-w-lg flex-col items-stretch justify-between gap-10">
+        <div className="flex size-full max-h-[400px] max-w-lg flex-col items-stretch justify-between gap-10 px-4">
           <div className="flex flex-row items-center justify-between">
             <Tooltip>
               <TooltipTrigger asChild>
@@ -312,16 +315,13 @@ export default function TechStack() {
           className="z-0"
         />
       </div>
-      <div className="flex-1">
-        <div className="flex flex-col gap-2">
-          <h3 className="text-xl font-semibold dark:text-neutral-100">
-            Building a website takes more than just some tools.
+      <div className="flex-1 px-6 md:px-0">
+        <div className="flex flex-col gap-2 text-center md:text-left rtl:md:text-right">
+          <h3 className="text-xl font-semibold dark:text-neutral-100 rtl:text-2xl rtl:font-bold">
+            {t("SUBTITLE_H3")}
           </h3>
-          <p className="text-neutral-700 dark:text-neutral-300">
-            It’s about understanding how the pieces fit together, making
-            decisions that actually improve the user experience, and knowing
-            when to write code or when to rely on the right library. Tools help,
-            but the real work is in how you use them.
+          <p className="text-neutral-700 dark:text-neutral-300 rtl:text-lg max-w-xl mx-auto md:mx-0">
+            {t("SUBTITLE_P")}
           </p>
         </div>
       </div>
