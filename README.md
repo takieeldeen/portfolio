@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Performance Portfolio
 
-## Getting Started
+A high-performance, visually stunning, and fully responsive developer portfolio built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**. Designed to showcase technical expertise with premium aesthetics and seamless bilingual support.
 
-First, run the development server:
+![Portfolio Preview](public/preview.png) _(Note: Add your own preview image here)_
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Bilingual Support (i18n)**: Fully integrated English and Arabic support using `next-intl`, including RTL (Right-to-Left) layout optimization.
+- **Premium Bento Grid**: Dynamic skills section featuring interactive "Global Store" state management and responsive multi-device design visualizations.
+- **Animated Tech Stack**: A custom-built, interactive visualization of tools and technologies using `framer-motion` and animated beams.
+- **Fully Responsive**: Mobile-first design architecture ensuring a perfect experience on smartphones, tablets, and desktops.
+- **Modern UI/UX**: Built with **Radix UI**, **Lucide Icons**, and custom **Glassmorphism** effects for a high-end feel.
+- **Performance Optimized**: Leveraging Next.js Server Components, optimized font loading, and smooth entry animations.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Core**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS 4.0](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Internationalization**: [next-intl](https://next-intl-docs.vercel.app/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **UI Components**: shadcn/ui (Radix UI)
 
-## Learn More
+## 🏁 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js 18.x or higher
+- npm, yarn, pnpm, or bun
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1.  **Clone the repository:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    git clone https://github.com/takieeldeen/portfolio.git
+    cd portfolio
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open the app:**
+    Navigate to `http://localhost:3000` in your browser.
+
+## ⚙️ Customization Guide
+
+### 1. Updating Personal Information
+
+All text content is managed via translation files to support multiple languages.
+
+- **English**: Edit `messages/en.json`
+- **Arabic**: Edit `messages/ar.json`
+
+### 2. Changing the Tech Stack
+
+The tech stack visualization icons and tooltips are defined in:
+
+- `sections/tech-stack/tech-stack.tsx`
+- Update the `navItems` or specific technology icons using `react-icons` or `lucide-react`.
+
+### 3. Modifying Projects
+
+Projects are listed in the `sections/projects` component.
+
+- Locate `sections/projects/views/main-view.tsx` to update project titles, descriptions, images, and links.
+
+### 4. Adjusting Theme & Colors
+
+- Primary colors and global styles are defined in `app/[locale]/globals.css`.
+- Tailwind configuration (if using specialized plugins) is in `tailwind.config.ts` (or standard Tailwind 4.0 configuration).
+
+## 📱 Responsive Support
+
+The project is built with a **Mobile-First** approach. Key responsive features include:
+
+- **Navbar**: Transforms into a mobile-friendly hamburger menu with a smooth overlay.
+- **Bento Cards**: Automatically stack and resize based on screen dimensions.
+- **Tech Beams**: Vertical stacking logic for small screens to ensure readability.
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+Created with ❤️ by [Takie Eldeen](https://github.com/takieeldeen)
