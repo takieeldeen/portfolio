@@ -21,7 +21,7 @@ const Circle = forwardRef<
       ref={ref}
       className={cn(
         "z-10 flex size-12 items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
-        className
+        className,
       )}
     >
       {children}
@@ -52,7 +52,7 @@ export default function TechStack() {
       >
         <DotPattern
           className={cn(
-            "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]"
+            "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
           )}
         />
         <div className="flex size-full max-h-[200px] max-w-lg flex-col items-stretch justify-between gap-10">
@@ -72,7 +72,7 @@ export default function TechStack() {
                 </div>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Express JS</p>
+                <p>Express.js</p>
               </TooltipContent>
             </Tooltip>
             <Tooltip>
@@ -83,14 +83,14 @@ export default function TechStack() {
                     className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon
-                      icon="hugeicons:shadcn-square"
+                      icon="teenyicons:nextjs-outline"
                       className="dark:text-white text-3xl"
                     />
                   </Circle>
                 </div>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Shadcn</p>
+                <p>Next.js</p>
               </TooltipContent>
             </Tooltip>
           </div>
@@ -110,7 +110,7 @@ export default function TechStack() {
                 </div>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Node JS</p>
+                <p>Node.js</p>
               </TooltipContent>
             </Tooltip>
             <Tooltip>
@@ -145,7 +145,7 @@ export default function TechStack() {
                 </div>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Mongodb</p>
+                <p>MongoDB</p>
               </TooltipContent>
             </Tooltip>
             <Tooltip>
@@ -163,7 +163,7 @@ export default function TechStack() {
                 </div>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Github Actions</p>
+                <p>GitHub Actions</p>
               </TooltipContent>
             </Tooltip>
 
@@ -175,14 +175,14 @@ export default function TechStack() {
                     className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon
-                      icon="teenyicons:nextjs-outline"
-                      className="dark:text-white text-3xl"
+                      icon="simple-icons:react"
+                      className="text-blue-400 text-3xl"
                     />
                   </Circle>
                 </div>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Next JS</p>
+                <p>React Native</p>
               </TooltipContent>
             </Tooltip>
           </div>
@@ -202,7 +202,7 @@ export default function TechStack() {
                 </div>
               </TooltipTrigger>
               <TooltipContent>
-                <p>PostegreSQL</p>
+                <p>PostgreSQL</p>
               </TooltipContent>
             </Tooltip>
             <Tooltip>
@@ -233,14 +233,14 @@ export default function TechStack() {
                     className="dark:bg-neutral-800 border-2 border-neutral-600 bg-neutral-100"
                   >
                     <Icon
-                      icon="devicon:tailwindcss"
-                      className="text-blue-500 text-3xl"
+                      icon="hugeicons:shadcn-square"
+                      className="dark:text-white text-3xl"
                     />
                   </Circle>
                 </div>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Tailwind CSS</p>
+                <p>Shadcn UI</p>
               </TooltipContent>
             </Tooltip>
           </div>

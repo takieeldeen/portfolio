@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import { Button } from "@/components/ui/button";
 import {
@@ -60,58 +59,58 @@ function StateManagementCard() {
         <CardDescription>
           Every State needs to be designed carefully
         </CardDescription>
-        <CardContent className=" py-12 h-96 justify-center flex flex-col gap-3">
-          {state === "LOADED" && (
-            <AnimatePresence>
-              <motion.div
-                initial={{ opacity: 0.8, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="flex flex-col gap-3"
-              >
-                {[1, 2, 3].map((el) => (
-                  <DataItem key={el} />
-                ))}
-              </motion.div>
-            </AnimatePresence>
-          )}
-          {state === "LOADING" && (
-            <AnimatePresence>
-              <motion.div
-                initial={{ opacity: 0.8, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="flex flex-col gap-3"
-              >
-                {[1, 2, 3].map((el) => (
-                  <DataItemSkeleton key={el} />
-                ))}
-              </motion.div>
-            </AnimatePresence>
-          )}
-
-          {state === "EMPTY" && (
-            <AnimatePresence>
-              <motion.div
-                initial={{ opacity: 0.8, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="flex flex-col gap-3"
-              >
-                <EmptyData />
-              </motion.div>
-            </AnimatePresence>
-          )}
-          {state === "UNAUTHORIZED" && (
-            <AnimatePresence>
-              <motion.div
-                initial={{ opacity: 0.8, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="flex flex-col gap-3"
-              >
-                <UnauthorizedDataCard />
-              </motion.div>
-            </AnimatePresence>
-          )}
-        </CardContent>
       </CardHeader>
+      <CardContent className=" py-12 h-full justify-center flex flex-col gap-3">
+        {state === "LOADED" && (
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0.8, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="flex flex-col gap-3"
+            >
+              {[1, 2, 3].map((el) => (
+                <DataItem key={el} />
+              ))}
+            </motion.div>
+          </AnimatePresence>
+        )}
+        {state === "LOADING" && (
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0.8, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="flex flex-col gap-3"
+            >
+              {[1, 2, 3].map((el) => (
+                <DataItemSkeleton key={el} />
+              ))}
+            </motion.div>
+          </AnimatePresence>
+        )}
+
+        {state === "EMPTY" && (
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0.8, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="flex flex-col gap-3"
+            >
+              <EmptyData />
+            </motion.div>
+          </AnimatePresence>
+        )}
+        {state === "UNAUTHORIZED" && (
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0.8, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="flex flex-col gap-3"
+            >
+              <UnauthorizedDataCard />
+            </motion.div>
+          </AnimatePresence>
+        )}
+      </CardContent>
     </Card>
   );
 }
