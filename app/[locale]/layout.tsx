@@ -44,7 +44,7 @@ export default async function RootLayout({
       dir={locale === "ar" ? "rtl" : "ltr"}
     >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-full overflow-x-hidden`}
       >
         <NextIntlClientProvider>
           <Navbar />

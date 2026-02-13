@@ -8,7 +8,7 @@ import ContactSection from "@/sections/contact/views/main-view";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="max-w-full overflow-x-hidden">
       <HeroSection />
       <TechStackSection />
       <SkillsSection />

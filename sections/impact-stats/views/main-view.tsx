@@ -67,7 +67,7 @@ export default function ImpactStatsSection() {
       id="stats"
       className="py-24 px-6 max-w-7xl mx-auto border-y border-neutral-100 dark:border-neutral-900 bg-neutral-50/50 dark:bg-neutral-900/20 rounded-[3rem] my-12"
     >
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
         {stats.map((stat, index) => (
           <motion.div
             key={index}

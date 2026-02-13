@@ -7,7 +7,10 @@ import SecurityCard from "../security-card";
 
 export default function BentoDemo() {
   return (
-    <section id="skills" className="md:grid md:grid-cols-3 md:gap-3 px-6 py-24">
+    <section
+      id="skills"
+      className="md:grid md:grid-cols-3 md:gap-3 px-6 py-24 max-w-7xl mx-auto"
+    >
       <div className="flex flex-col gap-3">
         <PerformanceCard />
         <APIFlowCard />

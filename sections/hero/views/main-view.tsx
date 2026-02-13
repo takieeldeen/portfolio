@@ -9,7 +9,7 @@ async function HeroSection() {
   const t = await getTranslations("HERO");
   console.log(t("TITLE"));
   return (
-    <section className="h-screen flex items-center justify-center">
+    <section className="h-screen flex items-center justify-center relative overflow-hidden px-6">
       <div className="flex flex-col gap-8 items-center">
         <div className="flex flex-col gap-2 items-center rtl:gap-4">
           <h1 className="z-10 text-center text-4xl font-medium tracking-tighter whitespace-pre-wrap text-neutral-800 dark:text-white md:text-6xl lg:text-7xl">
